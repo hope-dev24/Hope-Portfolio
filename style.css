@@ -6,6 +6,7 @@ body {
     margin: 40px;
     color: black;
     font-size: 16px;
+    background-color: #f4f4f9
 }
 
 h1 {
@@ -17,12 +18,15 @@ p {
 }
 
 .hero {
-    color: darkblue;
+    color: white;
     transition: color 0.55s;
+    background-color: darkblue;
+    padding: 40px;
+    border-radius: 8px;
 }
 
 .hero:hover {
-    color: crimson;
+    color: white;
 }
 
 .hero h1 {
@@ -71,6 +75,14 @@ nav ul li a:active {
 
 nav ul li a:focus {
     outline: 2px solid crimson;
+}
+
+section {
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 600px) {
