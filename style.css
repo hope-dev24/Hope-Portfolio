@@ -1,0 +1,87 @@
+/* ==========================
+   Hope Portfolio Styles
+   ========================== */
+
+body {
+    margin: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.hero {
+    color: darkblue;
+    transition: color 0.55s;
+}
+
+.hero:hover {
+    color: crimson;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    border: 2px solid blue;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-style: italic;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    background-color: darkblue;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px) scale(1.1) rotate(5deg);
+}
+
+nav ul li a:active {
+    transform: scale(0.9);
+}
+
+nav ul li a:focus {
+    outline: 2px solid crimson;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    nav ul {
+        flex-direction: column; 
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+}
